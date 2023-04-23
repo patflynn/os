@@ -1,0 +1,19 @@
+package:
+  name: bug
+  version: 1
+  epoch: 0
+  description: minimal test case for permission error
+  copyright:
+    - license: Apache-2.0
+
+environment:
+  contents:
+    packages:
+      - busybox
+      - openjdk-11
+      - openjdk-11-jre
+
+pipeline:
+  -
+  - runs: |
+      echo "hello test"
